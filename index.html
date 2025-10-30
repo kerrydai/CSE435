@@ -5,52 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lane Management System</title>
-    <link rel="stylesheet" href="screen.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1, h2 {
+        color: #2c3e50;
+      }
+      .team-member {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      .team-member img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .meeting-info {
+        margin: 30px 0;
+        padding: 15px;
+        border: 1px solid #ddd;
+      }
+      .agenda-item, .summary-item {
+        margin-bottom: 15px;
+      }
+      .action-item {
+        background: #f5f5f5;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .checkmark {
+        color: green;
+        font-weight: bold;
+      }
+      .deadline {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <h1>Lane Management System</h1>
+    
     <h2>Project Background</h2>
     <p>More and more modern cars are adding safety features. With the usage of cameras detecting the lane lines, the system can now assist drivers in driving.</p>
+    
     <h2>Project Description</h2>
     <p>The Lane Management System is an automated driver assistance system designed to detect lanes and assist or warn drivers to stay within the lane.</p>
-    <p></p>
-
-    <h2>Team Composition:</h2>
-
-    <div>
-      <img src="aug.jpeg" alt="Augustine Adomako" width="200">
+    
+    <h2>Team Composition</h2>
+    
+    <div class="team-member">
+      <img src="aug.jpeg" alt="Augustine Adomako">
       <div>Augustine Adomako - Project Manager</div>
       <a href="https://www.linkedin.com/in/augustine-adomako/">Profile</a>
     </div>
 
-    <div>
-      <img src="KERRY.jpg" alt="Kerry Dai" width="200">
+    <div class="team-member">
+      <img src="KERRY.jpg" alt="Kerry Dai">
       <div>Kerry Dai - Artifacts Manager</div>
       <a href="www.linkedin.com/in/kerry-dai-5764b9303">Profile</a>
-
     </div>
 
-    <div>
-      <img src="brant.png" alt="Brant McCormick" width="200">
+    <div class="team-member">
+      <img src="brant.png" alt="Brant McCormick">
       <div>Brant McCormick - Domain Expert</div>
-      <a href=" https://www.linkedin.com/in/brant-mccormick/">Profile</a>
+      <a href="https://www.linkedin.com/in/brant-mccormick/">Profile</a>
     </div>
 
-    <div>
-      <img src="lance.jpg" alt="Lance Motowski" width="200">
+    <div class="team-member">
+      <img src="lance.jpg" alt="Lance Motowski">
       <div>Lance Motowski - Project Facilitator</div>
       <a href="https://www.linkedin.com/in/lance-motowski-20a431308/">Profile</a>
     </div>
-    <div>
-      <img src="andre.jpg" alt="Andre Sasser" width="200">
+
+    <div class="team-member">
+      <img src="andre.jpg" alt="Andre Sasser">
       <div>Andre Sasser - Security Manager</div>
       <a href="https://www.linkedin.com/in/andre-sasser-jr-972216255/">Profile</a>
     </div>
 
+    <h2>Meeting Agenda</h2>
+    <div class="meeting-info">
+      <p><strong>Date & Time:</strong> 10/28/2025 8:00 PM</p>
+      <p><strong>Platform:</strong> Discord</p>
+      <p><strong>Attendees:</strong> Entire Team</p>
+      
+      <div class="agenda-item">
+        <h3>1. Go over everyone's use case diagram</h3>
+        <ul>
+          <li>Compile a final version of the use case diagram</li>
+        </ul>
+      </div>
+      
+      <div class="agenda-item">
+        <h3>2. Go over everyone's domain diagram</h3>
+        <ul>
+          <li>Compile a final version of the domain diagram</li>
+        </ul>
+      </div>
+      
+      <div class="agenda-item">
+        <h3>3. Identify any potential customer questions we missed</h3>
+        <ul>
+          <li>Add questions for tomorrow's meeting</li>
+        </ul>
+      </div>
+      
+      <div class="agenda-item">
+        <h3>4. Prepare for Zoom meeting with customer</h3>
+        <ul>
+          <li>Zoom is working properly</li>
+          <li>Camera and microphone are working properly</li>
+          <li>Dressed accordingly</li>
+          <li>Everyone understands their roles</li>
+        </ul>
+      </div>
+      
+      <div class="agenda-item">
+        <h3>5. Discuss future deadlines/due dates</h3>
+      </div>
+    </div>
+    
+    <h2>Meeting Summary</h2>
+    <div class="meeting-info">
+      <p><strong>Date & Time:</strong> 10/28/2025 9:30</p>
+      <p><strong>Duration:</strong> 90 Minutes</p>
+      <p><strong>Platform:</strong> Discord</p>
+      <p><strong>Attendees:</strong> Entire team besides project manager</p>
+      
+      <div class="summary-item">
+        <h3><span class="checkmark">✓</span> 1. Go over everyone's use-case diagram</h3>
+        <ul>
+          <li>Completed draft of use-case diagram for submission</li>
+          <li>Identified system boundary as Lane Management System (LMS)</li>
+          <li>Clarified includes vs extends relationships</li>
+        </ul>
+      </div>
+      
+      <div class="summary-item">
+        <h3><span class="checkmark">✓</span> 2. Go over everyone's domain diagram</h3>
+        <ul>
+          <li>Completed draft of domain diagram for submission</li>
+          <li>Identified key classes: Lane Detection AI, Camera, Alert System, etc.</li>
+        </ul>
+      </div>
+      
+      <div class="summary-item">
+        <h3><span class="checkmark">✓</span> 3. Identify any potential customer questions</h3>
+        <ul>
+          <li>Are there sensors used other than the camera?</li>
+          <li>Does the camera belong to the system or is it used by other systems?</li>
+          <li>Does LMS get sensor data from Control Area Network?</li>
+        </ul>
+      </div>
+      
+      <div class="summary-item">
+        <h3><span class="checkmark">✓</span> 4. Prepare for Zoom meeting with customer</h3>
+        <ul>
+          <li>Everyone confirmed ready for meeting</li>
+          <li>All will take notes and send to project facilitator</li>
+        </ul>
+      </div>
+      
+      <div class="summary-item">
+        <h3><span class="checkmark">✓</span> 5. Discuss future deadlines/due dates</h3>
+        <ul>
+          <li><span class="deadline">Use case diagram and Domain models:</span> Oct. 29th 2:00PM</li>
+          <li><span class="deadline">Summary of Customer Meeting:</span> Oct. 30th 5:00PM</li>
+          <li><span class="deadline">Sequence and State Diagrams:</span> Nov. 3rd 2:00PM</li>
+          <li><span class="deadline">Draft0 of Prototype V0:</span> Nov. 5th 2:00PM</li>
+        </ul>
+      </div>
+    </div>
+    
+    <h2>Action Items</h2>
+    <div class="action-item">
+      <h3>1. Use-case/domain model submission</h3>
+      <p><strong>Assigned to:</strong> Lance/Augustine</p>
+      <p><strong>Deadline:</strong> 10/28</p>
+    </div>
+    
+    <div class="action-item">
+      <h3>2. Customer summary meeting</h3>
+      <p><strong>Assigned to:</strong> Lance/Augustine</p>
+      <p><strong>Deadline:</strong> 10/30</p>
+    </div>
+    
+    <div class="action-item">
+      <h3>3. Develop Sequence and State Diagrams</h3>
+      <p><strong>Assigned to:</strong> Everyone</p>
+      <p><strong>Deadline:</strong> 11/2</p>
+    </div>
+    
     <h2>Course and Instructor Page</h2>
     <a href="https://cse.msu.edu/~cse435/">CSE435 Course Page</a>
     <p>&</p>
     <a href="https://www.cse.msu.edu/~chengb/">Instructor: Dr. Betty H.C. Cheng</a>
-
   </body>
 </html>
